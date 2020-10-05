@@ -2,10 +2,10 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-        python: 3.8
+        python: 3.7
   build:
     commands:
-      - sam package --template-file template.yml --s3-bucket aws-sam-cli-managed-default-samclisourcebucket-cimye9j8plsc --output-template-file packaged-template.yml
+      - sam package --template-file template.yaml --s3-bucket aws-sam-cli-managed-default-samclisourcebucket-cimye9j8plsc --output-template-file packaged-template.yml
 artifacts:
   files:
     - packaged-template.yml
